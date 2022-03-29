@@ -16,7 +16,7 @@ const ListItemComponent = (location) => {
   const [resultsPerPage, setResultsPerPage] = useState(5);
   useEffect(() => {
     if (page) updateAuthors(page, resultsPerPage);
-  }, [page, resultsPerPage]);
+  });
 
   const removeFavAuthorHandler = (index) => {
     const _favAuthors = [...favAuthors];
